@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+<Calculator class="calcultor"/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Calculator from './components/Calculator.vue';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+
+  components:{
+    Calculator,
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+  body {
+    background-image: url(./assets/backgroundPIC.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+  .calcultor{
+    animation: calcAnimation 1.5s;
+    position: absolute;
+    top:7%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(2px 3px 10px #000000af);
+    }
+  @keyframes calcAnimation {
+    0%{
+      opacity: 0;
+      top: 0;
+    }
+    100%{
+      opacity:1;
+      top: 7%;
+    }
+} 
 </style>
