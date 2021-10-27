@@ -17,12 +17,12 @@ export default {
 
 <style>
   body {
-    background-image: url(./assets/backgroundPIC.jpg);
+    background-image: url(./assets/backgroundPIC.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-}
+    }
   .calcultor{
     animation: calcAnimation 1.5s;
     position: absolute;
